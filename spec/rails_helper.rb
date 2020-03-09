@@ -73,6 +73,8 @@ Shoulda::Matchers.configure do |config|
   end
 end
 
+Dir[Rails.root.join('spec/support/**/*.rb')].each { |f| require f }
+
 # [...]
 RSpec.configure do |config|
   # [...]
@@ -92,6 +94,8 @@ RSpec.configure do |config|
     end
   end
   # [...]
+
+  config.include RequestSpecHelper, type: :request
 end
 
 

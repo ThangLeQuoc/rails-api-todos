@@ -38,10 +38,10 @@ group :test do
   gem 'database_cleaner'
 end
 
-group :development do
-  gem 'solargraph'
-  gem 'rubocop'
-end
+# group :development do
+#   gem 'solargraph'
+#   gem 'rubocop'
+# end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
